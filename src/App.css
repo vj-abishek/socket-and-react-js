@@ -1,38 +1,86 @@
-.App {
+body {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+
+  height: 18px;
+  padding: 9px;
+  line-height: 18px;
+  background-color: #e82127;
+}
+
+.nav-bar span {
+  color: #fff;
+  font-weight: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  /* margin-top: 10%; */
+  width: 80%;
+  margin: 30px auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 92vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-area {
+  position: sticky;
+  bottom: 0px;
+  height: 20px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  background-color: #fff;
+  ;
+
+  /* background-color: red; */
 }
 
-.App-link {
-  color: #61dafb;
+.Placeholder-div {
+  width: 100%;
+  overflow-y: auto;
+  height: 85vh;
+  /* background-color: blue; */
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Messsage {
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+  resize: none;
+  border-right: 0px;
+  outline: none;
+  padding: 9px;
+  border-radius: 22px 0px 0px 22px;
+}
+
+.send-btn {
+  border: 0px;
+  border-right: 1px solid #ebebeb;
+  border-radius: 0px 22px 22px 0px;
+  height: 40px;
+  background-color: #e82127;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 9px
+}
+
+.ContainerOfMessage {
+  width: auto;
+  max-width: 120px;
+  margin-top: 5px;
+  height: auto;
+  padding: 7px;
+  /* background-color: #fff; */
+  border: 1px solid #ebebeb;
+  border-radius: 22px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1)
 }
