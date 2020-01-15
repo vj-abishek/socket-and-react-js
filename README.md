@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This repository shows how to use react and socket.io. Go to `src` and `Components` folder
+
 ## Available Scripts
 
 In the project directory, you can run:
