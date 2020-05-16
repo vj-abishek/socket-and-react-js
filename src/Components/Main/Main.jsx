@@ -17,12 +17,14 @@ export default function Main() {
 
   //listen to socket
   useEffect(() => {
-    //listen to websocket events
-    socket.on('message', messaged => {
+    const fun =  messaged => {
       setMessages([...messages, messaged])
       // console.log(message)
     })
+    //listen to websocket events
+    socket.on('message',fun)
     scrollTO()
+    return () => socket.off('message',fun)
   }, [messages])
 
   //handle functions
